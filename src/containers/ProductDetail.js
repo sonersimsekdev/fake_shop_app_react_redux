@@ -30,7 +30,9 @@ import {
   return (
     <div className="ui grid container">
       {Object.keys(product).length === 0 ? (
-        <div>...Loading</div>
+        <div class="ui active dimmer">
+          <div class="ui massive text loader">Loading</div>
+        </div>
       ) : (
         <div className="ui placeholder segment">
           <div className="ui two column stackable center aligned grid">

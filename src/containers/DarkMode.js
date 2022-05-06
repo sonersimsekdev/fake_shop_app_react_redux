@@ -1,9 +1,10 @@
 import React from "react";
-import "./DarkMode.css";
+import "..//style/DarkMode.css";
 
 const DarkMode = () => {
   let clickedClass = "clicked";
   const body = document.body;
+  const nav = document.nav;
   const lightTheme = "light";
   const darkTheme = "dark";
   let theme;
