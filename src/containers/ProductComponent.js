@@ -1,15 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-
+{/*four wide column  container */}
 export const ProductComponent = () => {
     const products = useSelector((state) => state.allProducts.products)
     const renderList = products.map((product) => {
         const {id ,title , image, price, category} = product
         return (
-            <div className='four wide column' key={id}>
+            <div className='ui twelve wide mobile four wide computer  column ' >
                 <Link to={`product/${id}`}>
-                  <div className='ui link cards'>
+                  <div className='ui fluid  cards'>
                       <div className='card'>
                           <div className='image'>
                               <img src={image}  alt={title}/>
